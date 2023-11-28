@@ -158,9 +158,9 @@ double CalculatorModel::line_reader(std::string string, Stack *my_stack_for_numb
 										&temp_priority);
 		string_number.clear();
 	}
-//	while (my_stack_for_symbol->top != NULL) {
-//		math(my_stack_for_number, my_stack_for_symbol, &temp_priority);
-//	}
+	while (my_stack_for_symbol->top != NULL) {
+		math(my_stack_for_number, my_stack_for_symbol, &temp_priority);
+	}
 	return my_stack_for_number->top->data.number;
 }
 
